@@ -24,12 +24,17 @@ gulp.task('copy-css', ['clean'], ()=>{
     .pipe(gulp.dest('./build'));
 });
 
+gulp.task('copy-js', ['clean'], ()=>{
+  return gulp.src(paths.js)
+    .pipe(gulp.dest('./build'));
+});
+
 
 
 gulp.task('watch', ()=>{
   gulp.watch('./app/*', ['build']);
 });
 
-gulp.task('build', ['clean', 'copy-css', 'copy-html']);
+gulp.task('build', ['clean', 'copy-css', 'copy-html', 'copy-js']);
 
 gulp.task('default', ['build']);
