@@ -2,14 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link type="text/css" rel="stylesheet" href="./style.css">
+    <link type="text/css" rel="stylesheet" href="./css/style.css">
     <title>Hotel Form</title>
   </head>
   <body ng-app="HotelFormApp">
     <h1>Test</h1>
-    <main ng-controller="bedroomCleanlinessForm as bcf">
-      {{bcf.}}
+    <main>
+      <div class="container" ng-controller="bedroomCleanlinessController as bcc">
+        <bedroom-cleanliness-form-directive></bedroom-cleanliness-form-directive
+      </div>
     </main>
-
+    <script src="./bundle.js"></script>
   </body>
 </html>

@@ -1,9 +1,9 @@
 'use strict';
 
 module.exports = function (app) {
-  app.directive('bedroomCleanlinessForm', function() {
+  app.directive('bedroomCleanlinessFormDirective', function() {
     return {
-      templateUrl: './views/templates/bedroom-condition-form.html'
+      templateUrl: './views/templates/bedroom-cleanliness.html'
     };
   });
 
